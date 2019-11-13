@@ -4,20 +4,22 @@ import { Table } from 'react-bootstrap'
 import arraySort from 'array-sort'
 import ReactDOM from 'react-dom'
 
+
 class Todo extends Component { 
     // onSubmitHandle(event) {  event.preventDefault();
     // this.setState({    mockData: [...this.state.mockData, {        id: Date.now(),        title: event.target.item.value,        done: false,        date: new Date()    }]  });
     // event.target.item.value = '';}
 
+    onDeleteHandle(){ 
+      let id = arguments[0];
+      this.setState({    
+        mockData: this.state.mockData.filter(item => {    
+          if (item.id !== id) 
+        {        return item;      }    })  });}
 
-     onDeleteHandle() {  let id = arguments[0];
-        this.setState({    
-          mockData: this.state.mockData.filter(item => {    
-            if (item.id !== id) 
-          {        return item;      }    })  });}
 
-
-
+    
+    
         // renderEditForm() {    if (this.state.edit) {      return <form onSubmit={this.onUpdateHandle.bind(this)}>        <input type="text" name="updatedItem" className="item" defaultValue={this.state.title} />        <button className="update-add-item">Update</button>      </form>    }  }
         // {this.renderEditForm()}
 
