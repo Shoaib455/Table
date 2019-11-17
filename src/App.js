@@ -1,16 +1,25 @@
 
 // import Table from './Components/bootsraptable/bootsrap'
-
+// import Toggle from './Components/table2/table2';
+// import Table from './Components/dataTable/dataTable'
+// import Toggle from './Components/addrow/addrow'
+// import Toggle from './Components/sorting/sorting'
+// import Toggle from './Components/ButtonModel/Model'
+// import Toggle from './Components/qualificationdata/qualificationdata'
+// import Toggle from './Components/sidebar/sidebar'
+// import Toggle from './Components/Input/input'
+// import Toggle from './Components/slider2/slider'
+// import Toggle from './Components/bubbleslider/bubbleslider'
+// import Toggle from './Components/collapse/Collapse'
+// import Toggle from './Components/inputForm/inputform'
 
 
 
 import React from 'react'
 import data from './Components/data/data.json'
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Toggle from './Components/table2/table2';
-// import Table from './Components/dataTable/dataTable'
-// import Toggle from './Components/addrow/addrow'
-import Toggle from './Components/sorting/sorting'
+import Toggle from './Components/qualificationdata/qualificationdata'
+
 
 export default ()=>{
   return(
